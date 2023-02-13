@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo', serif;
+}
+
+body {
+    background-image: url("../img/risen-wang-20jX9b35r_M-unsplash.jpg");
+    background-color: rgba(0, 0, 0, 0.521);
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 70vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: space-evenly;
+    font-size: 1.6em;
+    margin: auto;
+    color: white;
+}
+
+.status-header {
+    text-transform: uppercase;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact-form .input-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.contact-form .input-container i{
+    position: absolute;
+    font-size: 1.4em;
+    top: 0.4em;
+    right: 0.4em;
+    opacity: 0;
+}
+
+.failure-icon,
+.error {
+    color: red;
+}
+
+.success-icon {
+    color: green;
+}
+
+.error {
+    font-size: 0.8em;
+    margin-top: 0.2em;
+    text-align: left;
+    margin-left: 1em;
+}
+
+
+.contact-form .btn {
+    padding: 0.8em;
+    font-size: 0.8em;
+    border: none;
+    border-radius: 30px;
+}
+
+.contact-form .submit-btn {
+    background-color: rgb(54, 54, 54);
+    color: white;
+    cursor: pointer;
+}
+
+.contact-form .submit-btn:hover {
+    background-color: rgb(31, 31, 31);
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4em;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.6em;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: rgb(148, 148, 148);
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+@media screen and (min-width: 1240px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1540px) {
+    .container {
+        width: 40%;
+    }
+}

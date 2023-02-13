@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona w budowie nr.5</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+            <div class="logo-image">
+                LOGO
+            </div>
+            <h1 class="status-header">
+                coming soon
+            </h1>
+            <p>We are preparing something amazing and exciting for you. We also have a special surprise for our subscribers.
+            </p>
+            <form action="send.php" method="post" id="form" class="contact-form">
+                <div class="input-container input-container__email">
+                    <input id="email" type="email" class="btn email-btn" placeholder="Enter a valid email address" name="email">
+                    <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                    <i class="fa-regular fa-circle-check success-icon"></i>
+                    <div class="error"></div>
+                </div>
+                <div class="input-container input-container__submit">
+                    <button type="submit" class="btn submit-btn" name="submit" onClick="return checkStatus()">GET UPDATES</button>
+                </div>
+            </form>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/0d89dceb86.js" crossorigin="anonymous"></script>
+</body>
+</html>
